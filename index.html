@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags -->
+  <title>WebbyZign | Web Design & Development Agency</title>
+  <meta name="title" content="WebbyZign | Web Design & Development Agency" />
+  <meta name="description" content="WebbyZign specializes in web design, web development, UI/UX, and responsive websites. Your digital presence starts here." />
+  <meta name="keywords" content="WebbyZign, web design, web development, responsive websites, UI/UX, modern web design, SEO, portfolio, business websites, digital agency" />
+  <meta name="author" content="WebbyZign" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://gizmohub-lab.github.io/WebbyZign/" />
+  <meta property="og:title" content="WebbyZign | Web Design & Development Agency" />
+  <meta property="og:description" content="Expert web design and development services to build your online presence. Let's create something amazing together." />
+  <meta property="og:image" content="https://gizmohub-lab.github.io/WebbyZign/preview-image.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://gizmohub-lab.github.io/WebbyZign/" />
+  <meta property="twitter:title" content="WebbyZign | Web Design & Development Agency" />
+  <meta property="twitter:description" content="Professional website design and development from WebbyZign. Craft your vision into a stunning website." />
+  <meta property="twitter:image" content="https://gizmohub-lab.github.io/WebbyZign/preview-image.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="finallogo.png" type="image/x-icon" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "WebbyZign",
+  "url": "https://gizmohub-lab.github.io/WebbyZign/",
+  "logo": "https://gizmohub-lab.github.io/WebbyZign/finalogo.png",
+  "description": "WebbyZign provides expert web design and development services.",
+  "sameAs": [
+    "https://www.facebook.com/yourpage",
+    "https://www.twitter.com/yourhandle",
+    "https://www.linkedin.com/company/yourcompany"
+  ]
+}
+</script>
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #0d0d0d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .cuboid {
+      width: 100px;
+      height: 100px;
+      position: relative;
+      transform-style: preserve-3d;
+      animation: spin 3s linear forwards;
+    }
+
+    .face {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background: linear-gradient(45deg, #5fd3a9, #6a7cd1, #a86bd8);
+      opacity: 0.9;
+    }
+
+    .front  { transform: rotateY(  0deg) translateZ(50px); }
+    .back   { transform: rotateY(180deg) translateZ(50px); }
+    .right  { transform: rotateY( 90deg) translateZ(50px); }
+    .left   { transform: rotateY(-90deg) translateZ(50px); }
+    .top    { transform: rotateX( 90deg) translateZ(50px); }
+    .bottom { transform: rotateX(-90deg) translateZ(50px); }
+
+    @keyframes spin {
+      0% { transform: rotateX(0) rotateY(0); }
+      100% { transform: rotateX(360deg) rotateY(360deg); }
+    }
+
+    .glow {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(111,212,168,0.6), rgba(170,127,240,0.2));
+      filter: blur(30px);
+      z-index: -1;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+
+    .logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40px;
+      height: 40px;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    /* Hidden SEO content */
+    .seo-text {
+      position: absolute;
+      left: -9999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <!-- Glow effect -->
+  <div class="glow" aria-hidden="true"></div>
+
+  <!-- Rotating cube logo -->
+  <div class="cuboid" aria-label="WebbyZign Logo Animation">
+    <img src="Logo.png" alt="WebbyZign Logo" class="logo" loading="lazy" />
+    <div class="face front"></div>
+    <div class="face back"></div>
+    <div class="face right"></div>
+    <div class="face left"></div>
+    <div class="face top"></div>
+    <div class="face bottom"></div>
+  </div>
+
+
+
+  <script>
+    setTimeout(() => {
+      window.location.href = "home.html";
+    }, 3000);
+  </script>
+</body>
+</html>
